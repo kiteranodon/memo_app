@@ -30,7 +30,7 @@ $update = function() {
     <h1>更新する</h1>
     <form wire:submit="update">
         <p>
-            <label for="title">タイトル</label><br>
+            <label for="title">タイトル</label>
             @error('title')
                 <span class=error>({{ $message }})</span>  
             @enderror
@@ -39,7 +39,7 @@ $update = function() {
             
         </p>
         <p>
-            <label for="body">本文</label><br>
+            <label for="body">本文</label>
             @error('body')
                 <span class=error>({{ $message }})</span>  
             @enderror
